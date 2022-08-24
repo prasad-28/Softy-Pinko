@@ -1,0 +1,131 @@
+*{
+margin: 0;
+padding: 0;
+}
+.main_header{
+    background-image: url("../Images/banner-bg.png");
+    height:  calc(100vh - 30px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+.d_Flex{
+  display: flex;
+}
+
+.main_navigation_header{
+      height: 80px;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      /* justify-content: space-evenly; */
+      background-color: white;
+      border-radius: 41px;
+      padding: 0px 25px;
+      width: calc( 1110px - 50px);
+      position: sticky;
+      top: 30px;
+}
+.nav_logo img{
+  height: 30px;
+  width: 160px;
+}
+.nav_items li{
+  list-style-type: none;
+  padding: 0 20px;
+}
+.nav_items li a{
+    text-decoration: none;
+    color: darkslategray;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.nav_active a{
+  color: #ff589e ! important;
+}
+
+.nav_items a:hover{
+  color: #ff589E;
+  transition: 0.3s;
+}
+.nav_header_text{
+    width: 600px;
+    margin: auto;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_header_text h1{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  .nav_header_text p{
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  .nav_header_button{
+    padding: 15px;
+    color: white;
+    background: #ff589e;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 12px;
+    width: 172px;
+    cursor: pointer;
+  }
+  .features_head{
+      width: 1110px;
+      height: 300px;
+      margin: auto;
+      position: relative;
+      top: 100px;
+      /* bottom: -117px; */
+      align-items: center;
+  }
+  .feature_box{
+    width: 300px;
+    height: 210px;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    margin:10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .feature_icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #8261ee;;
+    color: red;
+    border: 0px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+  }
+  .feature_icon img{
+    width: 60px;
+    height: 60px;
+    /* color: red; */
+    margin: auto;
+  }
+  .feature_box h5{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: sans-serif;
+  }
+  .feature_box:hover .feature_icon{
+   background-color: #ff589e;
+  }
