@@ -3,6 +3,9 @@
 	padding: 0;
 	font-family: "Raleway", sans-serif;
 }
+.fw-1{
+	font-weight:100;
+}
 
 .main_header {
 	background-image: url("../Images/banner-bg.png");
@@ -243,8 +246,8 @@
 .work_process_inner_items {
 	font-family: sans-serif;
 	font-size: 15px;
-	width: calc(165px - 60px);
-	height: calc(190px - 60px);
+	width: calc(160px - 60px);
+	height: calc(194px - 60px);
 	/* width: 160px;
     height: 180px; */
 	padding: 30px;
@@ -403,4 +406,25 @@
 
 .Testimonial_data h1 {
 	padding-bottom: 20px;
+}
+
+@media All and (max-width:1024px){
+	.width_1024{
+		width: 100%;
+	}
+	.work_process_inner_items{
+		width: auto;
+	}
+
+	.Testimonial_box{
+		margin: 0px 15px;
+    width: calc(100% - 40px);
+	}
+	.main_navigation_header{
+		/* width: calc(100% - 130px);
+    left: auto;
+    right: auto;
+    padding: 0 15px;
+    position: fixed; */
+	}
 }
