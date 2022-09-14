@@ -415,18 +415,18 @@
     align-items: center;
 }
 
-.pricing_data {
+.pricing_data,.blog_header{
     width: 650px;
     text-align: center;
     margin: auto;
     margin-bottom: 65px;
 }
 
-.pricing_data h1 {
+.pricing_data h1, .blog_header h1{
     margin-bottom: 30px;
 }
 
-.pricing_data p {
+.pricing_data p, .blog_header p {
     line-height: 2;
 }
 
@@ -527,7 +527,7 @@
 
 .counter_section{
 	width: 100%;
-	height: 350px;
+	height: 330px;
 	background-image: url("../Images/fun-facts-bg.png");
 	background-size: cover;
 	background-position: center;
@@ -585,10 +585,55 @@
 	top: 160px;
 	right: -20px;
 }
+.blog_section{
+  width: 100%;
+  height: 700px;
+  display: flex;
+}
 
+.inner_blog{
+  width: 1110px;
+  height: 500px;
+  margin: auto;
+}
+.blog_boxes_outer{
+  width: 1110px;
+  height: 500px;
+}
+.blog_box{
+  width:  calc(370px - 20px);
+  height: 480px;
+  padding: 0 10px;
+  text-align: center;
+}
+.blog_box img{
+  width: 350px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.blog_box h1{
+  margin: 20px 0px;
+  color: #1e1e1e;
+  font-size: 20px;
+}
 
-
-
+.blog_box p{
+    font-size: 14px;
+    font-family: 'Raleway';
+    line-height: 1.5;
+    color: #777;
+}
+.blog_button{
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 0px;
+    outline: none;
+    font-size: 13px;
+    margin-top: 20px;
+    background-color: #8261ee;
+    color: white;
+}
 
   /* Responsive Start */
 @media All and (max-width:1024px) {
