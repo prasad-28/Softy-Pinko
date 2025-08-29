@@ -34,7 +34,7 @@ document.addEventListener('click', function(event) {
 
 // Close menu when clicking on a link
 document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('.nav_items a');
+  const navLinks = document.querySelectorAll('.nav_items a, .dropdown_nav a');
   navLinks.forEach(link => {
     link.addEventListener('click', function() {
       const navMenu = document.getElementById('navMenu');
@@ -247,7 +247,7 @@ document.querySelectorAll('img[data-src]').forEach(img => {
 // ===== NAVIGATION ACTIVE STATE =====
 window.addEventListener('scroll', function() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav_items a');
+  const navLinks = document.querySelectorAll('.nav_items a, .dropdown_nav a');
   
   let current = '';
   sections.forEach(section => {
@@ -324,12 +324,17 @@ document.addEventListener('DOMContentLoaded', function() {
     yearElement.textContent = currentYear;
   }
   
-  // Add mobile menu toggle button if it doesn't exist
+  // Ensure mobile menu toggle button exists and works
   const mobileToggle = document.querySelector('.mobile-menu-toggle');
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', toggleMenu);
+  }
+  
+  // Add mobile menu toggle button if it doesn't exist
   if (!mobileToggle) {
     const toggleButton = document.createElement('i');
     toggleButton.className = 'fa-solid fa-bars mobile-menu-toggle';
-    toggleButton.onclick = toggleMenu;
+    toggleButton.addEventListener('click', toggleMenu);
     
     const nav = document.querySelector('.main_navigation_header');
     if (nav) {
